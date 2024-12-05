@@ -20,7 +20,7 @@ game.max = 100;
 /**
  * Секретное число
  */
-game.secret_number = Math.trunc(Math.random() * game.max);
+game.secret_number = Math.trunc(Math.random() * game.max) + 1;
 
 
 /**
