@@ -18,7 +18,7 @@ game.state_game = {
 game.max = 100;
 
 /**
- * Максимальное число верхней границы
+ * Секретное число
  */
 game.secret_number = Math.trunc(Math.random() * game.max);
 
