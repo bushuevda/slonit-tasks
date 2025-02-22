@@ -29,7 +29,7 @@ function myIndexOf(arr, item, from = 0){
 }
 
 /*
-*Вспомогательная функция для тестирования функции mySlice
+*Вспомогательная функция для тестирования функции myIndexOf
 */
 function myIndexOfTest(){
 		/*
