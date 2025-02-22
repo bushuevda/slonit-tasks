@@ -5,15 +5,15 @@ function myIndexOf(arr, item, from = 0){
 	* Подготовка начального индекса прохода по массиву
 	*/
 	function prepareStart(start){
-        if(-arr.length <= start && start < 0)
-            return start + arr.length;
-        else if(-arr.length > start)
-            return 0;
-        else if(start >= arr.length)
-            return null;
-        else 
-            return start;
-    }
+	        if(-arr.length <= start && start < 0)
+	            return start + arr.length;
+	        else if(-arr.length > start)
+	            return 0;
+	        else if(start >= arr.length)
+	            return null;
+	        else 
+	            return start;
+    	}
 
 	if(Array.isArray(arr)){
 		let index = -1;
