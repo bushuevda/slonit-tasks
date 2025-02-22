@@ -1,7 +1,7 @@
 function mySlice(arr, start, end){
     
-	/*
-	* Состояние функции в зависимости от результата проверки аргументов
+    /*
+    * Состояние функции в зависимости от результата проверки аргументов
     * U - undefined
     * D - defined
     */
@@ -12,9 +12,9 @@ function mySlice(arr, start, end){
         DDD: 3,
     }
     
-	/*
-	* Результат проверки аргументов
-	*/
+    /*
+    * Результат проверки аргументов
+    */
     let mode = 0;
     if(Array.isArray(arr)){
         ++mode;
@@ -44,9 +44,9 @@ function mySlice(arr, start, end){
             break;
     }
     
-	/*
-	* Подготовка slice 
-	*/
+    /*
+    * Подготовка slice 
+    */
     function prepareSlice (start, end){
         let slice = []
         for(let i = start; i < end; i++)
@@ -54,9 +54,9 @@ function mySlice(arr, start, end){
         return slice;
     }
     
-	/*
-	* Проверка входного аргмента start (для состояния DDU)
-	*/
+    /*
+    * Проверка входного аргмента start (для состояния DDU)
+    */
     function prepareStart(start){
         if(-arr.length <= start && start < 0)
             return start + arr.length;
@@ -68,9 +68,9 @@ function mySlice(arr, start, end){
             return start;
     }
     
-	/*
-	* Проверка входных аргментов start и end (для состояния DDD)
-	*/
+    /*
+    * Проверка входных аргментов start и end (для состояния DDD)
+    */
     function prepareEnd(start, end){
         if(-arr.length <= end && end < 0)
             return end + arr.length;
